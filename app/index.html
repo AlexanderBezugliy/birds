@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./fonts/Gilroy-SemiBoldItalic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-RegularItalic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-MediumItalic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-ExtraBoldItalic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-BoldItalic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Gilroy-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <!-- -------------------------------- HEADER ------------------------------------------- -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header__wrap">
+                    <div class="header__wrap-logo">
+                        <img src="./img/header/logo.jpg" alt="logo">
+                    </div>
+                    <div class="header__wrap-contacts">
+                        <div class="header__wrap-contacts-phone">
+                            <a href="tel:89209994350" type="phone">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.4999 19.75H17.3724C2.63494 18.9025 0.542441 6.4675 0.249941 2.6725C0.226373 2.37744 0.261258 2.08062 0.352598 1.79906C0.443937 1.5175 0.589936 1.25673 0.78223 1.03169C0.974523 0.80665 1.20933 0.621766 1.4732 0.48763C1.73707 0.353493 2.02481 0.272741 2.31994 0.250001H6.45244C6.75286 0.24971 7.04644 0.339633 7.29517 0.508122C7.54389 0.676611 7.73629 0.915903 7.84744 1.195L8.98744 4C9.09721 4.27266 9.12444 4.57156 9.06578 4.85957C9.00711 5.14758 8.86512 5.412 8.65744 5.62L7.05994 7.2325C7.30948 8.65056 7.98858 9.95775 9.00536 10.9772C10.0221 11.9967 11.3275 12.6792 12.7449 12.9325L14.3724 11.32C14.5836 11.1146 14.8505 10.9759 15.1399 10.9213C15.4293 10.8666 15.7284 10.8983 15.9999 11.0125L18.8274 12.145C19.1023 12.2597 19.3369 12.4536 19.5012 12.702C19.6654 12.9504 19.752 13.2422 19.7499 13.54V17.5C19.7499 18.0967 19.5129 18.669 19.0909 19.091C18.669 19.5129 18.0967 19.75 17.4999 19.75ZM2.49994 1.75C2.30103 1.75 2.11026 1.82902 1.96961 1.96967C1.82896 2.11032 1.74994 2.30109 1.74994 2.5V2.56C2.09494 7 4.30744 17.5 17.4549 18.25C17.5535 18.2561 17.6522 18.2427 17.7456 18.2105C17.8389 18.1783 17.925 18.1281 17.9988 18.0626C18.0727 17.9971 18.1329 17.9176 18.176 17.8288C18.2191 17.74 18.2442 17.6436 18.2499 17.545V13.54L15.4224 12.4075L13.2699 14.545L12.9099 14.5C6.38494 13.6825 5.49994 7.1575 5.49994 7.09L5.45494 6.73L7.58494 4.5775L6.45994 1.75H2.49994Z"
+                                        fill="#333333" />
+                                </svg>
+                                <a href="tel:89209994350" type="phone">
+                                    <p>8 920 999 43 50</p>
+                                </a>
+                        </div>
+                        <div class="header__wrap-contacts-icons">
+                            <svg class="icon_shop" width="35" height="36" viewBox="0 0 35 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.59729 9.13873L3.47048 9.12547C3.009 9.1086 2.59459 9.43495 2.51364 9.90262L2.50038 10.0294C2.48351 10.4909 2.80986 10.9053 3.27753 10.9863L5.16378 11.3125L6.30694 24.9322L6.3306 25.1369C6.5606 26.6899 7.89641 27.8575 9.48741 27.8575H23.1274L23.3328 27.851C24.8282 27.7555 26.0682 26.6246 26.2864 25.1223L27.4727 16.9243L27.4932 16.736C27.6024 15.2371 26.415 13.9363 24.8862 13.9363H7.26503L6.97162 10.4341L6.94951 10.2955C6.86396 9.93512 6.57098 9.65341 6.19729 9.58873L3.59729 9.13873ZM9.34231 25.9746C8.72322 25.9068 8.22811 25.4097 8.17523 24.7758L7.42235 15.8113H24.886L24.9962 15.8194C25.3909 15.878 25.676 16.2471 25.6169 16.6558L24.4306 24.8532L24.4009 24.9998C24.2504 25.573 23.7311 25.9825 23.1272 25.9825H9.48723L9.34231 25.9746ZM7.38533 31.7316C7.38533 30.6865 8.23242 29.8379 9.27783 29.8379C10.3231 29.8379 11.1716 30.6864 11.1716 31.7316C11.1716 32.777 10.323 33.6241 9.27783 33.6241C8.23256 33.6241 7.38533 32.7769 7.38533 31.7316ZM21.4497 31.7316C21.4497 30.6864 22.2982 29.8379 23.3435 29.8379C24.3887 29.8379 25.2372 30.6864 25.2372 31.7316C25.2372 32.777 24.3886 33.6241 23.3435 33.6241C22.2983 33.6241 21.4497 32.777 21.4497 31.7316ZM22.0604 19.4937C22.0604 18.976 21.6406 18.5562 21.1229 18.5562H17.6566L17.5294 18.5648C17.0718 18.6269 16.7191 19.0191 16.7191 19.4937C16.7191 20.0115 17.1389 20.4312 17.6566 20.4312H21.1229L21.2501 20.4227C21.7077 20.3606 22.0604 19.9684 22.0604 19.4937Z"
+                                    fill="#333333" />
+                                <circle cx="25" cy="10" r="10" fill="#06D10E" />
+                                <path
+                                    d="M28.1999 12.68V14H22.0079V12.956L25.3439 9.788C25.7199 9.428 25.9719 9.116 26.0999 8.852C26.2359 8.58 26.3039 8.312 26.3039 8.048C26.3039 7.656 26.1719 7.356 25.9079 7.148C25.6439 6.94 25.2559 6.836 24.7439 6.836C23.8879 6.836 23.2319 7.128 22.7759 7.712L21.6839 6.872C22.0119 6.432 22.4519 6.092 23.0039 5.852C23.5639 5.604 24.1879 5.48 24.8759 5.48C25.7879 5.48 26.5159 5.696 27.0599 6.128C27.6039 6.56 27.8759 7.148 27.8759 7.892C27.8759 8.348 27.7799 8.776 27.5879 9.176C27.3959 9.576 27.0279 10.032 26.4839 10.544L24.2399 12.68H28.1999Z"
+                                    fill="white" />
+                            </svg>
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.3465 2.49986C8.6596 2.49986 5.69901 5.46 5.69901 9.14736C5.69901 12.8339 8.66 15.7949 12.3465 15.7949C16.0339 15.7949 18.994 12.8343 18.994 9.14736C18.994 5.4596 16.0343 2.49986 12.3465 2.49986ZM12.3465 4.37486C14.9987 4.37486 17.119 6.49513 17.119 9.14736C17.119 11.7988 14.9983 13.9199 12.3465 13.9199C9.69553 13.9199 7.57401 11.7983 7.57401 9.14736C7.57401 6.49559 9.69507 4.37486 12.3465 4.37486ZM12.3466 18.0702C6.0591 18.0702 2.50037 19.2633 2.50037 22.644C2.50037 26.0284 6.0749 27.244 12.3466 27.244L13.151 27.2371C18.9354 27.136 22.1929 25.9031 22.1929 22.6702C22.1929 19.3594 18.7721 18.1241 12.7518 18.072L12.3466 18.0702ZM12.3466 19.9452C17.5984 19.9452 20.3179 20.87 20.3179 22.6702C20.3179 24.4593 17.6051 25.369 12.3466 25.369C7.09478 25.369 4.37537 24.4442 4.37537 22.644C4.37537 20.9026 6.94207 19.995 11.9257 19.9472L12.3466 19.9452ZM24.0048 9.89886C24.4795 9.89886 24.8717 10.2516 24.9338 10.7091L24.9423 10.8364V12.405H26.5625C27.0803 12.405 27.5 12.8247 27.5 13.3425C27.5 13.8171 27.1473 14.2093 26.6897 14.2714L26.5625 14.28H24.9423V15.8489C24.9423 16.3666 24.5226 16.7864 24.0048 16.7864C23.5302 16.7864 23.138 16.4337 23.0759 15.9761L23.0673 15.8489V14.28H21.45C20.9322 14.28 20.5125 13.8602 20.5125 13.3425C20.5125 12.8679 20.8652 12.4756 21.3228 12.4135L21.45 12.405H23.0673V10.8364C23.0673 10.3186 23.4871 9.89886 24.0048 9.89886Z"
+                                    fill="#333333" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-catalog">
+                        <ul class="header__menu-catalog-list">
+                            <li class="list_item"><a href="#">Каталог</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Птицы</a></li>
+                            <li><a href="#">Пожертвования</a></li>
+                        </ul>
+                        <ul class="header__menu-catalog-burger">
+                            <li>Готовые миксы</li>
+                            <li>Отдельные виды кормов</li>
+                            <li>Кормушки</li>
+                            <li>Готовые комплекты</li>
+                            <li>Аксессуары и другое</li>
+                        </ul>
+                    </div>
+                    <div class="header__menu-search">
+                        <input class="header__menu-search-input" type="text" placeholder="Поиск">
+                        <button class="header__menu-search-button" type="submit">
+                            <svg class="header__menu-search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.5144 2.5C7.87904 2.5 2.5 7.76024 2.5 14.2491C2.5 20.7379 7.87904 25.9982 14.5144 25.9982C17.3523 25.9982 19.9604 25.0359 22.0162 23.4269L25.9212 27.2358L26.0251 27.3233C26.3877 27.5857 26.9017 27.5558 27.2297 27.2341C27.5906 26.8803 27.5898 26.3074 27.228 25.9545L23.3689 22.1904C25.3312 20.0993 26.5289 17.311 26.5289 14.2491C26.5289 7.76024 21.1498 2.5 14.5144 2.5ZM14.5144 4.30968C20.1278 4.30968 24.6783 8.7597 24.6783 14.2491C24.6783 19.7385 20.1278 24.1885 14.5144 24.1885C8.90108 24.1885 4.35055 19.7385 4.35055 14.2491C4.35055 8.7597 8.90108 4.30968 14.5144 4.30968Z"
+                                    fill="#333333" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- -------------------------------- END - HEADER ------------------------------------------- -->
+    <!-- -------------------------------- MAIN ------------------------------------------- -->
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <p class="catalog__sub-text">Каталог</p>
+                <div class="catalog__content catalog_wrap">
+                    <article class="catalog__content-wrap catalog_wrap-section">
+                        <img class="catalog__content-wrap-img" src="./img/main/feeders.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Кормушки</h2>
+                        <span class="visually-hidden"></span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap catalog_wrap-section">
+                        <img class="catalog__content-wrap-img" src="./img/main/mix.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Готовые миксы</h2>
+                        <span>(смеси кормов)</span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap catalog_wrap-section">
+                        <img class="catalog__content-wrap-img" src="./img/main/other-type.png" alt="">
+                        <h2 class="catalog__content-wrap-title">Отдельные виды кормов</h2>
+                        <span>(зерен)</span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mix">
+            <div class="container">
+                <p class="catalog__sub-text">Готовые миксы<a class="bird-species__sub-title">Ещё</a></p>
+                <div class="catalog__content mix__ovomix">
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/mix(main).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">Корм для птиц</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <div class="catalog__content-wrap-new">Новинка</div>
+                        <img class="catalog__content-wrap-img" src="./img/main/mix(main).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">Корм для птиц</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <div class="catalog__content-wrap-new">Новинка</div>
+                        <img class="catalog__content-wrap-img" src="./img/main/mix(main).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">Корм для птиц</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/mix(main).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">Корм для птиц</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bird-species">
+            <div class="container">
+                <p class="catalog__sub-text">Виды птиц<span class="bird-species__sub-title">Ещё</span></p>
+                <div class="catalog__content mix__ovomix">
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/bird-species.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Домовый воробей</h2>
+                        <span>68</span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/bird-species.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Домовый воробей</h2>
+                        <span>68</span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/bird-species.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Домовый воробей</h2>
+                        <span>68</span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/bird-species.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Домовый воробей</h2>
+                        <span>68</span>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="rio">
+            <div class="container">
+                <p class="catalog__sub-text">Зёрна<span class="bird-species__sub-title">Ещё</span></p>
+                <div class="catalog__content mix__ovomix">
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/rio.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">для волнистых попугайчиков</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/rio.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">для волнистых попугайчиков</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/rio.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">PADOVAN OVOMIX GOLD ROSSO</h2>
+                        <span class="mix__sub-title">для волнистых попугайчиков</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <div class="rio__discount">Скидка</div>
+                        <img class="catalog__content-wrap-img" src="./img/main/rio.jpg" alt="">
+                        <h2 class="catalog__content-wrap-title mix__title">Корм для птиц RIO Линька</h2>
+                        <span class="mix__sub-title">для волнистых попугайчиков</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div class="mix__content">
+                            <ul class="mix__content-wrap">
+                                <li class="mix__content-wrap-cards active-price"><a href="#">200 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">400 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">800 г</a></li>
+                                <li class="mix__content-wrap-cards"><a href="#">1 кг</a></li>
+                            </ul>
+                        </div>
+                        <div class="mix__button">
+                            <button class="catalog__content-wrap-btn button" type="button">Подробнее</button>
+                            <button class="button-basket" type="button">
+                                <svg width="46" height="45" viewBox="0 0 46 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="45" height="44" rx="9.5" fill="white"
+                                        stroke="#BDBDBD" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.2376 11.8249L12.1234 11.8129C11.7081 11.7978 11.3351 12.0915 11.2623 12.5124L11.2503 12.6265C11.2352 13.0418 11.5289 13.4148 11.9498 13.4877L13.6474 13.7813L14.6763 26.039L14.6975 26.2232C14.9045 27.6209 16.1068 28.6718 17.5387 28.6718H29.8147L29.9996 28.6659C31.3454 28.5799 32.4614 27.5621 32.6578 26.2101L33.7255 18.8319L33.7439 18.6624C33.8422 17.3134 32.7735 16.1426 31.3975 16.1426H15.5385L15.2745 12.9907L15.2546 12.866C15.1776 12.5416 14.9139 12.2881 14.5776 12.2299L12.2376 11.8249ZM17.4081 26.9772C16.8509 26.9162 16.4053 26.4687 16.3577 25.8982L15.6801 17.8301H31.3974L31.4966 17.8374C31.8518 17.8902 32.1084 18.2224 32.0552 18.5902L30.9876 25.9679L30.9608 26.0998C30.8254 26.6157 30.358 26.9843 29.8145 26.9843H17.5385L17.4081 26.9772ZM15.6468 32.1585C15.6468 31.2179 16.4092 30.4541 17.3501 30.4541C18.2908 30.4541 19.0544 31.2177 19.0544 32.1585C19.0544 33.0993 18.2907 33.8617 17.3501 33.8617C16.4093 33.8617 15.6468 33.0992 15.6468 32.1585ZM28.3048 32.1585C28.3048 31.2177 29.0684 30.4541 30.0091 30.4541C30.9499 30.4541 31.7135 31.2177 31.7135 32.1585C31.7135 33.0993 30.9497 33.8617 30.0091 33.8617C29.0685 33.8617 28.3048 33.0993 28.3048 32.1585ZM28.8543 21.1444C28.8543 20.6784 28.4766 20.3006 28.0106 20.3006H24.891L24.7765 20.3083C24.3646 20.3642 24.0472 20.7172 24.0472 21.1444C24.0472 21.6104 24.425 21.9881 24.891 21.9881H28.0106L28.1251 21.9804C28.5369 21.9246 28.8543 21.5715 28.8543 21.1444Z"
+                                        fill="#333333" />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="feeders">
+            <div class="container">
+                <p class="catalog__sub-text">Кормушки<span class="bird-species__sub-title">Ещё</span></p>
+                <div class="catalog__content mix__ovomix">
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/feeders(second).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Комплект-агро "Избушка на курьих ножках"</h2>
+                        <span>кормушка малая</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/feeders(second).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Комплект-агро "Избушка на курьих ножках"</h2>
+                        <span>кормушка малая</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/feeders(second).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Комплект-агро "Избушка на курьих ножках"</h2>
+                        <span>кормушка малая</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                    <article class="catalog__content-wrap bird-species_wrap mix__ovomix-wrap">
+                        <img class="catalog__content-wrap-img" src="./img/main/feeders(second).jpg" alt="">
+                        <h2 class="catalog__content-wrap-title">Комплект-агро "Избушка на курьих ножках"</h2>
+                        <span>кормушка малая</span>
+                        <p class="feeders__price">1000 руб.</p>
+                        <div><button class="catalog__content-wrap-btn button" type="button">Подробнее</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="phone">
+            <div class="container">
+                <div class="phone__pic"><img src="./img/main/iPhone.png" alt="phone"></div>
+                <article class="phone__content">
+                    <h2>Пожертвуйте на благо проекта</h2>
+                    <div class="phone__content-wrap">
+                        <input class="phone__content-wrap-checkbox" type="radio" id="oneTimePayment" name="radio"
+                            checked>
+                        <label class="phone__content-wrap-text" for="oneTimePayment">Единоразовая выплата</label>
+                        <input class="phone__content-wrap-checkbox" type="radio" id="monthlyPayments" name="radio">
+                        <label class="phone__content-wrap-text" for="monthlyPayments">Ежемесячные выплаты</label>
+                    </div>
+                    <div class="phone__content-button">
+                        <input class="phone__content-button-sum" type="text" placeholder="Введите сумму">
+                        <button class="phone__content-button-donate" type="button">Пожертвовать</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <!-- -------------------------------- END - MAIN ------------------------------------------- -->
+    <!-- -------------------------------- FOOTER ------------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__wrap">
+                <article class="footer__wrap-text">
+                    <h2 class="visually-hidden"></h2>
+                    <p><a href="#">Оплата</a></p>
+                    <p><a href="#">Доставка</a></p>
+                </article>
+                <article class="footer__wrap-link">
+                    <h2 class="visually-hidden"></h2>
+                    <a class="footer__wrap-link-vk" href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_46_8132)">
+                                <path
+                                    d="M16.3336 0H8.65938C1.65625 0 -0.00390625 1.66016 -0.00390625 8.66328V16.3375C-0.00390625 23.3406 1.65625 25.0008 8.65938 25.0008H16.3336C23.3367 25.0008 24.9969 23.3406 24.9969 16.3375V8.66328C24.9969 1.66016 23.3203 0 16.3336 0ZM20.1789 17.8344H18.3641C17.6766 17.8344 17.4648 17.2891 16.2281 16.0359C15.1539 14.9945 14.6781 14.8563 14.4133 14.8563C14.0391 14.8563 13.9328 14.9617 13.9328 15.475V17.1148C13.9328 17.5547 13.7945 17.8188 12.6305 17.8188C10.7055 17.8188 8.56953 16.6547 7.07188 14.4859C4.81328 11.3078 4.19531 8.92734 4.19531 8.43516C4.19531 8.17031 4.30078 7.92266 4.80938 7.92266H6.62813C7.08828 7.92266 7.26328 8.13437 7.44219 8.62656C8.34141 11.2227 9.83907 13.4969 10.457 13.4969C10.6852 13.4969 10.7906 13.3914 10.7906 12.8094V10.1281C10.7211 8.89141 10.0703 8.78516 10.0703 8.34609C10.0703 8.13437 10.2453 7.92266 10.5258 7.92266H13.3859C13.7727 7.92266 13.9148 8.13437 13.9148 8.58984V12.207C13.9148 12.5977 14.0898 12.7359 14.1953 12.7359C14.4234 12.7359 14.6188 12.5977 15.0414 12.1742C16.3477 10.7094 17.2836 8.45078 17.2836 8.45078C17.4055 8.18594 17.6172 7.93828 18.0773 7.93828H19.8961C20.4414 7.93828 20.5633 8.21875 20.4414 8.60938C20.2133 9.66719 17.9875 12.8086 17.9875 12.8086C17.7961 13.1258 17.7227 13.2641 17.9875 13.618C18.1828 13.8828 18.818 14.432 19.2406 14.9242C20.018 15.807 20.6156 16.5477 20.775 17.0602C20.9539 17.5688 20.6898 17.8336 20.1766 17.8336L20.1789 17.8344Z"
+                                    fill="#E0E0E0" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_46_8132">
+                                    <rect width="25" height="25" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="footer__wrap-link-inst" href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.4966 8.33156C10.2014 8.33156 8.32828 10.2047 8.32828 12.5C8.32828 14.7953 10.2014 16.6684 12.4966 16.6684C14.7919 16.6684 16.665 14.7953 16.665 12.5C16.665 10.2047 14.7919 8.33156 12.4966 8.33156ZM24.9986 12.5C24.9986 10.7738 25.0142 9.0633 24.9173 7.34026C24.8204 5.33891 24.3638 3.56271 22.9004 2.09922C21.4338 0.632607 19.6607 0.179176 17.6594 0.082235C15.9333 -0.0147055 14.2228 0.000930141 12.4998 0.000930141C10.7736 0.000930141 9.06313 -0.0147055 7.34013 0.082235C5.33881 0.179176 3.56265 0.635734 2.09918 2.09922C0.632595 3.56584 0.179172 5.33891 0.0822335 7.34026C-0.0147052 9.06643 0.000930124 10.777 0.000930124 12.5C0.000930124 14.223 -0.0147052 15.9367 0.0822335 17.6597C0.179172 19.6611 0.635722 21.4373 2.09918 22.9008C3.56577 24.3674 5.33881 24.8208 7.34013 24.9178C9.06626 25.0147 10.7768 24.9991 12.4998 24.9991C14.2259 24.9991 15.9364 25.0147 17.6594 24.9178C19.6607 24.8208 21.4369 24.3643 22.9004 22.9008C24.3669 21.4342 24.8204 19.6611 24.9173 17.6597C25.0174 15.9367 24.9986 14.2262 24.9986 12.5ZM12.4966 18.9137C8.94743 18.9137 6.08305 16.0493 6.08305 12.5C6.08305 8.95073 8.94743 6.08629 12.4966 6.08629C16.0458 6.08629 18.9102 8.95073 18.9102 12.5C18.9102 16.0493 16.0458 18.9137 12.4966 18.9137ZM19.1729 7.3215C18.3442 7.3215 17.675 6.6523 17.675 5.82361C17.675 4.99493 18.3442 4.32573 19.1729 4.32573C20.0016 4.32573 20.6708 4.99493 20.6708 5.82361C20.671 6.02039 20.6324 6.21528 20.5572 6.39712C20.4821 6.57897 20.3717 6.74419 20.2326 6.88333C20.0935 7.02247 19.9282 7.1328 19.7464 7.20798C19.5646 7.28317 19.3697 7.32175 19.1729 7.3215Z"
+                                fill="#E0E0E0" />
+                        </svg>
+                    </a>
+                </article>
+                <article class="footer__wrap-contact">
+                    <h2 class="visually-hidden"></h2>
+                    <a class="footer__wrap-contact-ph" href="tel:89209994350" type="phone">8 920 999 43 50</a>
+                </article>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>

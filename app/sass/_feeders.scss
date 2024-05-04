@@ -1,0 +1,36 @@
+.feeders {
+    background-color: $main-bg;
+    padding-bottom: 150px;
+    
+    &_page {
+        padding-bottom: 50px;
+    }
+
+    &__price {
+        // font-family: 'Gilroy';
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26.6px;
+        text-align: left;
+        color: $price;
+        padding-top: 7px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .mix__ovomix {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+
+        &-wrap {
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    .mix__ovomix-wrap {
+        width: 90%;
+    }
+}

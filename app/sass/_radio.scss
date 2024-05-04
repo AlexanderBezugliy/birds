@@ -1,0 +1,52 @@
+.radio {
+    background-color: $main-bg;
+    padding-bottom: 100px;
+
+    &_arrow {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../img/feeders-main/arrow-right.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            cursor: pointer;
+            left: 117px;
+            top: 2px;
+        }
+
+        &::after {
+            content: '';
+            background-image: url('../img/feeders-main/arrow-left.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            cursor: pointer;
+            left: -32px;
+            top: 2px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        gap: 20px;
+
+        &-item {
+            // font-family: 'Gilroy';
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21.09px;
+            color: $numbers;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

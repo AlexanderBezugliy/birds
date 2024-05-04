@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.html,
+body {
+   scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.body {
+    font-family: 'Gilroy', "Arial", sans-serif;
+    font-weight: 500;
+    min-width: 375px;
+}
+
+.container {
+    max-width: 1350px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+       
+    }
+}

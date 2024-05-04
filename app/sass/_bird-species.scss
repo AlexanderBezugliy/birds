@@ -1,0 +1,33 @@
+.bird-species {
+    background-color: $main-bg;
+    padding-bottom: 45px;
+
+        &_wrap {
+            background-color: #F2F2F2;
+        }
+
+        &__sub-title {
+            padding-left: 30px;
+            // font-family: 'Gilroy';
+            font-size: 18px;
+            // font-weight: 500;
+            line-height: 21.19px;
+            text-align: left;
+            color: $green;
+            position: relative;
+            cursor: pointer;
+        }
+
+        &__sub-title::after {
+            content: "";
+            background-image: url('../img/header/arrow-green-down.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 30px;
+            height: 20px;
+            position: absolute;
+            cursor: pointer;
+            margin-top: -4px;
+        }
+
+}

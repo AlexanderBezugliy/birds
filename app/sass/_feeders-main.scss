@@ -1,0 +1,70 @@
+.feeders-main {
+    padding-top: 75px;
+    background-color: $main-bg;
+    &__tree {
+        display: inline-flex;
+
+        &-catalog {
+            // font-family: 'Gilroy';
+            font-size: 18px;
+            // font-weight: 500;
+            line-height: 21.19px;
+            color: $bd;
+            padding-right: 14px;
+        }
+
+        &-feeder {
+            // font-family: 'Gilroy';
+            font-size: 18px;
+            // font-weight: 500;
+            line-height: 21.19px;
+            color: $bd;
+            padding-left: 14px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $bd; 
+                position: absolute;
+                left: -2px;
+                top: 9px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__sub-text {
+        padding: 30px 0 40px 0;
+    }
+
+    &__sub-title {
+        // font-family: 'Gilroy';
+        font-size: 20px;
+        // font-weight: 500;
+        line-height: 23.54px;
+        color: $price;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url('../img/feeders-main/arrow-left\(green\).png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            cursor: pointer;
+            left: -5px;
+            top: 2px;
+        }
+
+
+    }
+
+    
+
+}

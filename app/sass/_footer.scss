@@ -1,0 +1,59 @@
+.footer {
+    background-color: $price;
+    padding: 102px 0 130px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            display: inline-flex;
+        }
+
+        &-text a{
+            font-size: 18px;
+            // font-weight: 500;
+            line-height: 21.19px;
+            color: #fff;
+            padding-right: 47px;
+        }
+
+        &-text p:last-child{
+            padding-right: 0;
+        }
+
+        &-link-inst {
+            padding-left: 20px;
+            padding-right: 60px;
+        }
+
+        &-contact-ph {
+            // font-family: 'Gilroy';
+            font-size: 18px;
+            // font-weight: 500;
+            line-height: 21.19px;
+            color: #fff;
+            position: relative;
+        }
+
+        &-contact-ph::before {
+            content: "";
+            background-image: url('../img/footer/phone.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            position: absolute;
+            left: -33px;
+        }
+
+    }
+
+}
+
+@media (max-width: 643px) {
+    .footer__wrap-text {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.html,
+body {
+  scroll-behavior: smooth;
+}
+
+.body {
+  /* font-family: "Montserrat", "Arial", sans-serif; */
+  /* font-style: normal; */
+  /* font-weight: 700; */
+  min-width: 375px;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1320px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+

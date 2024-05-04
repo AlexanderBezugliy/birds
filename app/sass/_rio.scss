@@ -1,0 +1,21 @@
+.rio {
+    background-color: $main-bg;
+    padding-bottom: 45px; 
+    
+
+    &__discount {
+        position: absolute;
+        font-family: 'Gilroy';
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.7px;
+        text-align: left;
+        color: #222222;
+        padding: 9px 16px;
+        background-color: #fff;
+        border: 1px solid $green;
+        border-radius: 10px;
+        right: 10px;
+        top: 11px;
+    }
+}
